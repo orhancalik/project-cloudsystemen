@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Producten</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="scripts/script.js" async defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          class="logo"
+          src="assets/fitkaptan-logo-transparant.png"
+          alt="fitkaptan-logo-transparant"
+      /></a>
+      <div class="headerimage"></div>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Producten</a></li>
+          <li><a href="klanten.html">Klanten</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#about-me">Over mezelf</a></li>
+          <li>
+            <form action="">
+              <input
+                type="search"
+                name="search"
+                id="searchInput"
+                placeholder="Zoek naar producten.."
+              />
+              <button class="search-icon">
+                <img src="assets/search-icon.png" alt="search" width="15px" />
+              </button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="shop">
+        <ul class="product-list">
+          <li>
+            <a href="liftinggloves.html">
+              <figure>
+                <img
+                  src="assets/liftinggloves.jpg"
+                  alt="liftinggloves"
+                  height="300px"
+                  width="300px"
+                />
+                <figcaption>FitKaptan</figcaption>
+              </figure></a
+            >
+            <div class="flex-row space-between w-full mb-sm"></div>
+            <h2>Lifting Gloves</h2>
+            <p>€16.99</p>
+            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+              ❤
+            </button>
+            <button class="cart-btn" onclick="addToCart('Lifting Gloves')">
+              <span>+</span>
+              <img src="assets/cart-icon.png" alt="" srcset="" />
+            </button>
+          </li>
+
+          <li>
+            <a href="adjustabledumbbell.html"
+              ><figure>
+                <img
+                  src="assets/adjustabledumbbells.jpg"
+                  alt="adjustable-dumbbell"
+                  height="300px"
+                  width="300px"
+                />
+                <figcaption>FitKaptan</figcaption>
+              </figure></a
+            >
+            <div class="flex-row space-between w-full mb-sm"></div>
+            <h2>Adjustable Dumbbells</h2>
+            <p>€125.99</p>
+            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+              ❤
+            </button>
+            <button
+              class="cart-btn"
+              onclick="addToCart('Adjustable Dumbbells')"
+            >
+              <span>+</span>
+              <img src="assets/cart-icon.png" alt="" srcset="" />
+            </button>
+          </li>
+
+          <li>
+            <a href="proteinbar.html">
+              <figure>
+                <img
+                  src="assets/proteinbar.jpg"
+                  alt="protein-bar"
+                  height="300px"
+                  width="300px"
+                />
+                <figcaption>FitKaptan</figcaption>
+              </figure></a
+            >
+            <div class="flex-row space-between w-full mb-sm"></div>
+            <h2>Protein Bar</h2>
+            <p>€2.49</p>
+            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+              ❤
+            </button>
+            <button class="cart-btn" onclick="addToCart('Protein Bar')">
+              <span>+</span> <img src="assets/cart-icon.png" alt="" srcset="" />
+            </button>
+          </li>
+
+          <li>
+            <a href="fitnesswatch.html">
+              <figure>
+                <img
+                  src="assets/fitnesswatch.jpg"
+                  alt="fitness-watch"
+                  height="300px"
+                  width="300px"
+                />
+                <figcaption>FitKaptan</figcaption>
+              </figure>
+            </a>
+            <div class="flex-row space-between w-full mb-sm"></div>
+            <h2>Fitness Watch</h2>
+            <p>€89.99</p>
+            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+              ❤
+            </button>
+            <button class="cart-btn" onclick="addToCart('Fitness Watch')">
+              <span>+</span> <img src="assets/cart-icon.png" alt="" srcset="" />
+            </button>
+          </li>
+
+          <li>
+            <a href="yogamat.html">
+              <figure>
+                <img
+                  src="assets/yogamat.jpg"
+                  alt="yoga-mat"
+                  height="300px"
+                  width="300px"
+                />
+                <figcaption>FitKaptan</figcaption>
+              </figure></a
+            >
+            <div class="flex-row space-between w-full mb-sm"></div>
+            <h2>Yoga Mat</h2>
+            <p>€12.99</p>
+            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+              ❤
+            </button>
+            <button class="cart-btn" onclick="addToCart('Yoga Mat')">
+              <span>+</span> <img src="assets/cart-icon.png" alt="" srcset="" />
+            </button>
+          </li>
+
+          <li>
+            <a href="gymshirt.html">
+              <figure>
+                <img
+                  src="assets/gymshirt.jpg"
+                  alt="gym-shirt"
+                  height="300px"
+                  width="300px"
+                />
+                <figcaption>FitKaptan</figcaption>
+              </figure>
+            </a>
+            <div class="flex-row space-between w-full mb-sm"></div>
+            <h2>Gym Shirt</h2>
+            <p>€16.99</p>
+            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+              ❤
+            </button>
+            <button class="cart-btn" onclick="addToCart('Gym Shirt')">
+              <span>+</span> <img src="assets/cart-icon.png" alt="" srcset="" />
+            </button>
+          </li>
+
+          <li>
+            <a href="wheyproteinshake.html">
+              <figure>
+                <img
+                  src="assets/wheyproteinshake.jpg"
+                  alt="wheyprotein-shake"
+                  height="300px"
+                  width="300px"
+                />
+                <figcaption>FitKaptan</figcaption>
+              </figure></a
+            >
+            <div class="flex-row space-between w-full mb-sm"></div>
+            <h2>Wheyprotein Shake</h2>
+            <p>€29.99</p>
+            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+              ❤
+            </button>
+            <button class="cart-btn" onclick="addToCart('Wheyprotein Shake')">
+              <span>+</span> <img src="assets/cart-icon.png" alt="" srcset="" />
+            </button>
+          </li>
+
+          <li>
+            <a href="fitnessball.html">
+              <figure>
+                <img
+                  src="assets/fitnessball.jpg"
+                  alt="fitness-ball"
+                  height="300px"
+                  width="300px"
+                />
+                <figcaption>FitKaptan</figcaption>
+              </figure></a
+            >
+            <div class="flex-row space-between w-full mb-sm"></div>
+            <h2>Fitness Ball</h2>
+            <p>€9.99</p>
+            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+              ❤
+            </button>
+            <button class="cart-btn" onclick="addToCart('Fitness Ball')">
+              <span>+</span> <img src="assets/cart-icon.png" alt="" srcset="" />
+            </button>
+          </li>
+
+          <li>
+            <a href="cardiomachine.html">
+              <figure>
+                <img
+                  src="assets/cardiomachine.jpg"
+                  alt="cardio-machine"
+                  height="300px"
+                  width="300px"
+                />
+                <figcaption>FitKaptan</figcaption>
+              </figure>
+            </a>
+            <div class="flex-row space-between w-full mb-sm"></div>
+            <h2>Cardio Machine</h2>
+            <p>€79.99</p>
+            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+              ❤
+            </button>
+            <button class="cart-btn" onclick="addToCart('Cardio Machine')">
+              <span>+</span> <img src="assets/cart-icon.png" alt="" srcset="" />
+            </button>
+          </li>
+
+          <li>
+            <a href="personaltraining.html">
+              <figure>
+                <img
+                  src="assets/personaltraining.jpg"
+                  alt="personal-training"
+                  height="300px"
+                  width="300px"
+                />
+                <figcaption>FitKaptan</figcaption>
+              </figure></a
+            >
+            <div class="flex-row space-between w-full mb-sm"></div>
+            <h2>Personal Training</h2>
+            <p>€19.99 /maand</p>
+            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+              ❤
+            </button>
+            <button class="cart-btn" onclick="addToCart('Personal Training')">
+              <span>+</span> <img src="assets/cart-icon.png" alt="" srcset="" />
+            </button>
+          </li>
+
+          <li>
+            <a href="gymnutrition.html">
+              <figure>
+                <img
+                  src="assets/gymnutrition.jpg"
+                  alt="gym-nutrition"
+                  height="300px"
+                  width="300px"
+                />
+                <figcaption>FitKaptan</figcaption>
+              </figure></a
+            >
+            <div class="flex-row space-between w-full mb-sm"></div>
+            <h2>Gym Nutrition</h2>
+            <p>€25.99 /maand</p>
+            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+              ❤
+            </button>
+            <button class="cart-btn" onclick="addToCart('Gym Nutrition')">
+              <span>+</span> <img src="assets/cart-icon.png" alt="" srcset="" />
+            </button>
+          </li>
+
+          <li>
+            <a href="groupfitness.html">
+              <figure>
+                <img
+                  src="assets/groupfitness.jpg"
+                  alt="group-fitness"
+                  height="300px"
+                  width="300px"
+                />
+                <figcaption>FitKaptan</figcaption>
+              </figure></a
+            >
+            <div class="flex-row space-between w-full mb-sm"></div>
+            <h2>Group Fitness</h2>
+            <p>€22.99 /maand</p>
+            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+              ❤
+            </button>
+            <button class="cart-btn" onclick="addToCart('Group Fitness')">
+              <span>+</span> <img src="assets/cart-icon.png" alt="" srcset="" />
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <aside>
+      <h2>
+        Winkelwagen
+        <span>
+          <button id="clearcart" onclick="clearCart()">
+            <img src="assets/trash.svg" alt="" /></button
+        ></span>
+      </h2>
+
+      <div id="shopcart">
+        <p>Aantal items: <span id="cart-count">0</span></p>
+        <ul id="cart"></ul>
+        <p>Subtotaal: <span id="subtotal">€0.00</span></p>
+        <p>BTW (21%): <span id="vat">€0.00</span></p>
+        <p>Totaal: <span id="total">€0.00</span></p>
+      </div>
+
+      <h2>Verlanglijst</h2>
+      <ul id="wishlist"></ul>
+    </aside>
+
+    <footer>
+      <section class="row">
+        <section class="col">
+          <h3>
+            Betaalmethoden
+            <section class="underline"><span></span></section>
+          </h3>
+          <section class="betaalmethoden">
+            <ul>
+              <li><img src="assets/PayPal.png" alt="" /></li>
+              <li><img src="assets/Mastercard.png" alt="" /></li>
+              <li><img src="assets/Visa.png" alt="" /></li>
+              <li><img src="assets/Klarna.png" alt="" /></li>
+              <li><img src="assets/ApplePay.png" alt="" /></li>
+              <li><img src="assets/GooglePay.png" alt="" /></li>
+            </ul>
+          </section>
+        </section>
+        <section class="col">
+          <h3>
+            Adres
+            <section class="underline"><span></span></section>
+          </h3>
+          <p>FitKaptan</p>
+          <p>Parklaan 22</p>
+          <p>9100 Sint-Niklaas | België</p>
+          <p class="email-id">info@fitkaptan.com</p>
+          <h4>+32 479 23 12 00</h4>
+        </section>
+        <section class="col">
+          <h3>
+            Links
+            <section class="underline"><span></span></section>
+          </h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Producten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Over mezelf</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </section>
+        <section class="col">
+          <h3>
+            Nieuwsbrief
+            <section class="underline"><span></span></section>
+          </h3>
+          <form>
+            <input type="email" placeholder="Voer uw e-mailadres in" required />
+            <button type="submit">
+              <img class="arrow" src="assets/arrow_forward.png" />
+            </button>
+          </form>
+        </section>
+      </section>
+      <p class="copyright">FitKaptan &copy; 2023 - All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

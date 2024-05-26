@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          class="logo"
+          src="assets/fitkaptan-logo-transparant.png"
+          alt="fitkaptan-logo-transparant"
+      /></a>
+      <div class="headerimage"></div>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Producten</a></li>
+          <li><a href="klanten.html">Klanten</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#about-me">Over mezelf</a></li>
+          <li>
+            <form action="">
+              <input
+                type="search"
+                name="search"
+                id="searchInput"
+                placeholder="Zoek naar producten.."
+              />
+              <button class="search-icon">
+                <img src="assets/search-icon.png" alt="search" width="15px" />
+              </button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contact-form">
+        <h1>Contacteer ons</h1>
+        <form>
+          <input type="text" placeholder="Naam.." class="contact-form-txt" />
+          <input
+            type="email"
+            placeholder="E-mailadres.."
+            class="contact-form-txt"
+          />
+          <textarea
+            placeholder="Bericht.."
+            class="contact-form-textarea"
+          ></textarea>
+          <input
+            type="submit"
+            placeholder="Verzenden"
+            class="contact-form-button"
+          />
+        </form>
+      </section>
+    </main>
+    <aside>
+      <div id="map"></div>
+    </aside>
+    <footer>
+      <section class="row">
+        <section class="col">
+          <h3>
+            Betaalmethoden
+            <section class="underline"><span></span></section>
+          </h3>
+          <section class="betaalmethoden">
+            <ul>
+              <li><img src="assets/PayPal.png" alt="" /></li>
+              <li><img src="assets/Mastercard.png" alt="" /></li>
+              <li><img src="assets/Visa.png" alt="" /></li>
+              <li><img src="assets/Klarna.png" alt="" /></li>
+              <li><img src="assets/ApplePay.png" alt="" /></li>
+              <li><img src="assets/GooglePay.png" alt="" /></li>
+            </ul>
+          </section>
+        </section>
+        <section class="col">
+          <h3>
+            Adres
+            <section class="underline"><span></span></section>
+          </h3>
+          <p>FitKaptan</p>
+          <p>Parklaan 22</p>
+          <p>9100 Sint-Niklaas | België</p>
+          <p class="email-id">info@fitkaptan.com</p>
+          <h4>+32 479 23 12 00</h4>
+        </section>
+        <section class="col">
+          <h3>
+            Links
+            <section class="underline"><span></span></section>
+          </h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Producten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Over mezelf</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </section>
+        <section class="col">
+          <h3>
+            Nieuwsbrief
+            <section class="underline"><span></span></section>
+          </h3>
+          <form>
+            <input type="email" placeholder="Voer uw e-mailadres in" required />
+            <button type="submit">
+              <img class="arrow" src="assets/arrow_forward.png" />
+            </button>
+          </form>
+        </section>
+      </section>
+      <p class="copyright">FitKaptan &copy; 2023 - All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
+
+<script src="./scripts/leaflet.js"></script>

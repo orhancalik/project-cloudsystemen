@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Watch</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          class="logo"
+          src="assets/fitkaptan-logo-transparant.png"
+          alt="fitkaptan-logo-transparant"
+      /></a>
+      <div class="headerimage"></div>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Producten</a></li>
+          <li><a href="klanten.html">Klanten</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#about-me">Over mezelf</a></li>
+          <li>
+            <form action="">
+              <input
+                type="search"
+                name="search"
+                id="searchInput"
+                placeholder="Zoek naar producten.."
+              />
+              <button class="search-icon">
+                <img src="assets/search-icon.png" alt="search" width="15px" />
+              </button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="productbox">
+        <article class="product-image">
+          <img src="assets/fitnesswatch.jpg" alt="Productafbeelding" />
+        </article>
+        <article>
+          <h2>Fitness Watch</h2>
+          <h4>FitKaptan</h4>
+          <article class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span>(18)</span>
+          </article>
+          <ul class="product-options">
+            <li>
+              &#10004; Volgt nauwkeurig stappen, afgelegde afstand en verbrande
+              calorieën gedurende de dag
+            </li>
+            <li>
+              &#10004; Continue monitoring van de hartslag, zowel tijdens
+              workouts als in rust, voor inzicht in de conditie
+            </li>
+            <li>
+              &#10004; Biedt functies zoals slaaptracking, GPS-navigatie en
+              meldingen voor oproepen en berichten voor een complete
+              fitnesservaring
+            </li>
+          </ul>
+          <h5 id="description">Beschrijving:</h5>
+          <p>
+            Til jouw fitness naar een hoger niveau met onze geavanceerde
+            fitnesswatch. Met nauwkeurige activiteitsregistratie,
+            hartslagbewaking en veelzijdige functionaliteit zoals slaaptracking
+            en meldingen, is dit horloge jouw ultieme metgezel voor een actieve
+            levensstijl.
+          </p>
+          <p id="Price">Prijs: €89,99</p>
+          <button class="wishlist-btn" onclick="toggleWishlist(this)">❤</button>
+          <button class="cart-btn" onclick="addToCart('Fitness Watch')">
+            <span>+</span>
+            <img src="assets/cart-icon.png" alt="" srcset="" />
+          </button>
+        </article>
+      </section>
+      <section class="reviewbox">
+        <h3>Klantreviews</h3>
+        <p class="review-text">
+          "Dit horloge heeft mijn fitnessroutine echt verbeterd! De
+          nauwkeurigheid van de hartslagmeting is indrukwekkend, en ik vind het
+          geweldig dat het mijn slaappatronen volgt. Het is comfortabel om te
+          dragen, zelfs tijdens intensieve trainingen. De batterijduur is
+          fantastisch en de meldingen voor oproepen en berichten zijn handig.
+          Een must-have voor wie serieus is over fitness!"
+        </p>
+        <p class="review-author">Review door Onur op nov 22, 2023</p>
+        <p class="review-text">
+          "Ik ben blij met mijn aankoop van dit fitnesshorloge. Het is
+          gemakkelijk te gebruiken en heeft een strak design. De
+          activiteitsregistratie is accuraat, maar soms lijkt de stappenteller
+          een beetje af te wijken. Over het algemeen heeft het horloge me
+          geholpen meer inzicht te krijgen in mijn gezondheid en het motiveert
+          me om actiever te zijn. Zou het zeker aanbevelen aan anderen!"
+        </p>
+        <p class="review-author">Review door Ebrar op sep 12, 2023</p>
+        <div class="review-form">
+          <h2>Laat een review achter</h2>
+          <form action="#" method="post">
+            <div class="input-group">
+              <label for="naam">Naam:</label>
+              <input type="text" id="naam" name="naam" required />
+            </div>
+            <div class="input-group">
+              <label for="beoordeling">Beoordeling:</label>
+              <select id="beoordeling" name="beoordeling" required>
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="1">★☆☆☆☆</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="opmerkingen">Opmerkingen:</label>
+              <textarea id="opmerkingen" name="opmerkingen"></textarea>
+            </div>
+            <button type="submit">Verstuur review</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <aside>
+      <h2>Winkelwagen</h2>
+      <div id="shopcart">
+        <p>Aantal items: <span id="cart-count">0</span></p>
+        <ul id="cart"></ul>
+        <p>Subtotaal: <span id="subtotal">€0.00</span></p>
+        <p>BTW (21%): <span id="vat">€0.00</span></p>
+        <p>Totaal: <span id="total">€0.00</span></p>
+      </div>
+
+      <h2>Verlanglijst</h2>
+      <ul id="wishlist"></ul>
+    </aside>
+
+    <footer>
+      <section class="row">
+        <section class="col">
+          <h3>
+            Betaalmethoden
+            <section class="underline"><span></span></section>
+          </h3>
+          <section class="betaalmethoden">
+            <ul>
+              <li><img src="assets/PayPal.png" alt="" /></li>
+              <li><img src="assets/Mastercard.png" alt="" /></li>
+              <li><img src="assets/Visa.png" alt="" /></li>
+              <li><img src="assets/Klarna.png" alt="" /></li>
+              <li><img src="assets/ApplePay.png" alt="" /></li>
+              <li><img src="assets/GooglePay.png" alt="" /></li>
+            </ul>
+          </section>
+        </section>
+        <section class="col">
+          <h3>
+            Adres
+            <section class="underline"><span></span></section>
+          </h3>
+          <p>FitKaptan</p>
+          <p>Parklaan 22</p>
+          <p>9100 Sint-Niklaas | België</p>
+          <p class="email-id">info@fitkaptan.com</p>
+          <h4>+32 479 23 12 00</h4>
+        </section>
+        <section class="col">
+          <h3>
+            Links
+            <section class="underline"><span></span></section>
+          </h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Producten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Over mezelf</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </section>
+        <section class="col">
+          <h3>
+            Nieuwsbrief
+            <section class="underline"><span></span></section>
+          </h3>
+          <form>
+            <input type="email" placeholder="Voer uw e-mailadres in" required />
+            <button type="submit">
+              <img class="arrow" src="assets/arrow_forward.png" />
+            </button>
+          </form>
+        </section>
+      </section>
+      <p class="copyright">FitKaptan &copy; 2023 - All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
